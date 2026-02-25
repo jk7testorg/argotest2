@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: argotest2
+  description: A Test Document for Demo Purposes named argotest2
+  annotations:
+    github.com/project-slug: jk7testorg/argotest2
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: jk7test/argotest2/main
+    argocd/app-name: argotest2
+    # argocd/app-selector: app.kubernetes.io/instance=argotest2
+    argocd/instance-name: default
+    backstage.io/kubernetes-id: argotest2
+
+spec:
+  type: service
+  owner: development
+
+  lifecycle: experimental
