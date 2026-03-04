@@ -12,7 +12,7 @@ metadata:
     argocd/instance-name: default
     backstage.io/kubernetes-id: argotest2
     grafana/dashboard-selector: argotest2
-    grafana/tag-selector: value
+    grafana/alert-label-selector: "service=awesome-service"
 spec:
   type: service
   owner: development
