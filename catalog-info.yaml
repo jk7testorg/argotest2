@@ -11,7 +11,8 @@ metadata:
     # argocd/app-selector: app.kubernetes.io/instance=argotest2
     argocd/instance-name: default
     backstage.io/kubernetes-id: argotest2
-
+    grafana/dashboard-selector: argotest2
+    grafana/tag-selector: value
 spec:
   type: service
   owner: development
